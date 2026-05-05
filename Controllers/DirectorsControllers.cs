@@ -43,7 +43,7 @@ namespace App.Controllers
     [HttpDelete]
 
     [Route("{id:int}")]
-    public IActionResult DeletDirectors(int id)
+    public IActionResult DeleteDirectors(int id)
     {
         var director = context.Directors.Find(id);
         if (director == null)
